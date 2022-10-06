@@ -1,5 +1,5 @@
-name: mojap package dependencies
-description: publishes the given repository 
+name: mojap package PyPI publisher
+description: publishes the given repository to PyPI
 
 inputs:
   pypi-api-token:
