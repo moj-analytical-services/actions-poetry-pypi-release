@@ -14,7 +14,7 @@ jobs:
               with:
                 fetch-depth: 1
             - name: release to PyPI
-              uses: moj-analytical-services/actions-poetry-pypi-release@latest
+              uses: moj-analytical-services/actions-poetry-pypi-release@v1
               with:
                 pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}
 ```
