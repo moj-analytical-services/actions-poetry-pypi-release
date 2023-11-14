@@ -22,4 +22,4 @@ runs:
       shell: bash
       env:
         TOKEN: ${{ inputs.pypi-api-token }}
-      run: poetry publish --build -u __token__ -p $TOKEN
+      run: poetry publish --build
