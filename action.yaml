@@ -1,10 +1,6 @@
 name: mojap package PyPI publisher
 description: publishes the given repository to PyPI
 
-inputs:
-  pypi-api-token:
-    description: PyPI API token
-    required: true
 
 runs:
   using: composite
@@ -20,6 +16,4 @@ runs:
         echo "$HOME/.poetry/bin" >> $GITHUB_PATH
     - name: publish to PyPI
       shell: bash
-      env:
-        TOKEN: ${{ inputs.pypi-api-token }}
       run: poetry publish --build
